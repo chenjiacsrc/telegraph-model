@@ -7,7 +7,7 @@ eta = 4; d = eta*g; deff = d+g; rho0 = 0*deff; rho1 = 10*deff;
 sigma1 = 3; sigma0 = 0.5*sigma1; sigma1prime = 0.8*sigma1;
 
 % agent-based model
-N = 81; maxnum = 61; itv = 4;
+N = 81; maxnum = 61;
 s0 = min(round(rho0/deff),N-1); s1 = min(round(rho1/deff),N-1); 
 birth = zeros(1,2*N);
 birth(1+s0) = sigma0/(sigma0+sigma1); birth(N+1+s1) = sigma1/(sigma0+sigma1);
